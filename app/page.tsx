@@ -45,8 +45,12 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
-        <h1 className="text-5xl md:text-7xl font-bold">
+      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+
+  <div className="absolute w-96 h-96 bg-purple-700/20 rounded-full blur-3xl"></div>
+
+  <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
+        <h1 className="text-6xl md:text-8xl font-extrabold tracking-wide">
           DARK ART SPYCE MUSIC
         </h1>
 
@@ -54,14 +58,24 @@ export default function Home() {
           Creating Culture. Building Artists. Shaping The Future.
         </p>
 
-        <p className="mt-6 max-w-3xl text-gray-300">
-          Founded in 2025, Dark Art Spyce Music is a fast-rising independent
-          music label dedicated to discovering, developing and promoting
-          exceptional musical talent across Africa and beyond.
-        </p>
+        <div className="mt-10 flex flex-col md:flex-row gap-4">
+  <a
+    href="#artists"
+    className="bg-purple-600 px-8 py-3 rounded-full hover:bg-purple-700"
+  >
+    Meet Our Artists
+  </a>
+
+  <a
+    href="#contact"
+    className="border border-purple-500 px-8 py-3 rounded-full hover:bg-purple-500"
+  >
+    Contact Us
+  </a>
+</div>
       </section>
 
-      <section className="px-6 py-20">
+      <section id="artists" className="px-6 py-20">
         <h2 className="text-4xl font-bold text-center text-purple-400 mb-12">
           OUR ARTISTS
         </h2>
@@ -123,7 +137,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 py-20 text-center">
+      <section id="contact" className="px-6 py-20 text-center">
         <h2 className="text-4xl font-bold text-purple-400 mb-6">
           CONTACT US
         </h2>
