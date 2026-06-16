@@ -136,9 +136,28 @@ export default function Home() {
           Lagos, Nigeria
         </p>
 
-        <button className="mt-8 bg-purple-600 px-8 py-3 rounded-full">
-          Contact Management
-        </button>
+        <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+  <a
+    href="tel:+2349078017729"
+    className="bg-purple-600 px-8 py-3 rounded-full hover:bg-purple-700"
+  >
+    📞 Call Us
+  </a>
+
+  <a
+    href="https://wa.me/2349016965927"
+    className="bg-green-600 px-8 py-3 rounded-full hover:bg-green-700"
+  >
+    💬 WhatsApp
+  </a>
+
+  <a
+    href="mailto:darkartspyce@gmail.com"
+    className="bg-zinc-800 px-8 py-3 rounded-full hover:bg-zinc-700"
+  >
+    ✉️ Email Us
+  </a>
+</div>
       </section>
 
     </main>
