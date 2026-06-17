@@ -1,12 +1,42 @@
 import Image from "next/image";
 
 const artists = [
-  { name: "OLY DASINGER", image: "/artists/oly.jpg" },
-  { name: "YUNGG DADDY FW", image: "/artists/yungg.jpg" },
-  { name: "VIBEZ-KING", image: "/artists/vibez.jpg" },
-  { name: "BLACK D-C", image: "/artists/blackdc.jpg" },
-  { name: "LEVEL", image: "/artists/level.jpg" },
-  { name: "KING BRIXXY", image: "/artists/king.jpg" },
+  {
+    name: "OLY DASINGER",
+    image: "/artists/oly.jpg",
+    state: "Ondo State",
+    genre: "Afrobeats",
+  },
+  {
+    name: "YUNGG DADDY FW",
+    image: "/artists/yungg.jpg",
+    state: "Cross River State",
+    genre: "Afrobeats",
+  },
+  {
+    name: "VIBEZ-KING",
+    image: "/artists/vibez.jpg",
+    state: "Anambra State",
+    genre: "Afrobeats",
+  },
+  {
+    name: "BLACK D-C",
+    image: "/artists/blackdc.jpg",
+    state: "Oyo State",
+    genre: "Afrobeats",
+  },
+  {
+    name: "LEVEL",
+    image: "/artists/level.jpg",
+    state: "Ogun State",
+    genre: "Afrobeats",
+  },
+  {
+    name: "KING BRIXXY",
+    image: "/artists/king.jpg",
+    state: "Ogun State",
+    genre: "Afrobeats",
+  },
 ];
 
 const staff = [
@@ -94,11 +124,23 @@ export default function Home() {
                 className="w-full h-80 object-cover"
               />
 
-              <div className="p-4">
-                <h3 className="text-xl font-bold">
-                  {artist.name}
-                </h3>
-              </div>
+              <div className="p-5">
+  <h3 className="text-xl font-bold">
+    {artist.name}
+  </h3>
+
+  <p className="text-purple-400 mt-2">
+    {artist.genre}
+  </p>
+
+  <p className="text-gray-400 text-sm">
+    {artist.state}, Nigeria
+  </p>
+
+  <button className="mt-4 w-full bg-purple-600 py-2 rounded-lg">
+    View Profile
+  </button>
+</div>
             </div>
           ))}
         </div>
