@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const artists = [
   {
@@ -112,37 +113,39 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {artists.map((artist) => (
-            <div
-              key={artist.name}
-              className="bg-zinc-900 rounded-2xl overflow-hidden"
-            >
-              <Image
-                src={artist.image}
-                alt={artist.name}
-                width={500}
-                height={500}
-                className="w-full h-80 object-cover"
-              />
+  <Link
+    href={`/artists/${artist.name.toLowerCase().replace(/\s+/g, "-")}`}
+    key={artist.name}
+  >
+    <div className="bg-zinc-900 rounded-2xl overflow-hidden">
+      <Image
+        src={artist.image}
+        alt={artist.name}
+        width={500}
+        height={500}
+        className="w-full h-80 object-cover"
+      />
 
-              <div className="p-5">
-  <h3 className="text-xl font-bold">
-    {artist.name}
-  </h3>
+      <div className="p-5">
+        <h3 className="text-xl font-bold">
+          {artist.name}
+        </h3>
 
-  <p className="text-purple-400 mt-2">
-    {artist.genre}
-  </p>
+        <p className="text-purple-400 mt-2">
+          {artist.genre}
+        </p>
 
-  <p className="text-gray-400 text-sm">
-    {artist.state}, Nigeria
-  </p>
+        <p className="text-gray-400 text-sm">
+          {artist.state}, Nigeria
+        </p>
 
-  <button className="mt-4 w-full bg-purple-600 py-2 rounded-lg">
-    View Profile
-  </button>
-</div>
-            </div>
-          ))}
+        <button className="mt-4 w-full bg-purple-600 py-2 rounded-lg">
+          View Profile
+        </button>
+      </div>
+    </div>
+  </Link>
+))}
         </div>
       </section>
 
