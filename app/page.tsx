@@ -194,6 +194,11 @@ export default function Home() {
         <p className="text-gray-300 mt-2">
           Lagos, Nigeria
         </p>
+        <p className="text-gray-300 mt-4 text-center">
+  For bookings, collaborations, promotions,
+  <br />
+  and business inquiries.
+        </p>
 
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
   <a
