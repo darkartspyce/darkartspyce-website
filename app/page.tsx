@@ -81,6 +81,13 @@ export default function Home() {
   <div className="absolute w-96 h-96 bg-purple-700/20 rounded-full blur-3xl"></div>
 
   <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
+<Image
+  src="/logo.png"
+  alt="Dark Art Spyce Music"
+  width={220}
+  height={220}
+  className="mx-auto mb-8"
+/>
         <h1 className="text-6xl md:text-8xl font-extrabold tracking-wide">
           DARK ART SPYCE MUSIC
         </h1>
