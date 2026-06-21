@@ -113,6 +113,36 @@ export default function Home() {
 </div>
       </section>
 
+<section id="about" className="px-6 py-20 max-w-5xl mx-auto">
+  <h2 className="text-4xl font-bold text-center text-purple-400 mb-8">
+    ABOUT DARK ART SPYCE MUSIC
+  </h2>
+
+  <p className="text-gray-300 leading-8 whitespace-pre-line">
+    {`Founded in 2025, Dark Art Spyce Music is a fast-rising independent music label dedicated to discovering, developing, and promoting exceptional musical talent across Africa and beyond.
+
+Built on creativity, originality, and artistic excellence, the label has quickly established itself as a growing force within the African music industry.
+
+Dark Art Spyce Music was created with a vision to empower artists, provide professional music development, and build a strong catalog of culturally impactful music.
+
+With a focus on Afrobeats, Afro Sounds, Amapiano, Hip-Hop, and contemporary African music, Dark Art Spyce Music aims to create records that resonate with audiences worldwide while showcasing the richness of African talent and culture.
+
+Creating Culture. Building Artists. Shaping the Future.
+
+Established 2025.`}
+  </p>
+
+  <div className="mt-10 text-center">
+    <h3 className="text-2xl font-bold text-purple-400 mb-4">
+      Signed Artists
+    </h3>
+
+    <p className="text-gray-300">
+      OLY DASINGER • YUNGG DADDY FW • VIBEZ-KING • BLACK D-C • LEVEL • KING BRIXXY
+    </p>
+  </div>
+</section>
+
       <section id="artists" className="px-6 py-20">
         <h2 className="text-4xl font-bold text-center text-purple-400 mb-12">
           OUR ARTISTS
