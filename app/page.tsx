@@ -193,10 +193,17 @@ Established 2025.`}
 
         <div className="grid md:grid-cols-3 gap-8">
           {staff.map((member) => (
-            <div
-              key={member.name}
-              className="bg-zinc-900 rounded-2xl overflow-hidden"
-            >
+              <Link
+  key={member.name}
+  href={
+    member.name === "Kingsley Chibueze Chidi"
+      ? "/staff/kingsley-chibueze-chidi"
+      : member.name === "Ricch Cord"
+      ? "/staff/ricch-cord"
+      : "/staff/kiv"
+  }
+  className="bg-zinc-900 rounded-2xl overflow-hidden block hover:scale-105 transition"
+>
               <Image
                 src={member.image}
                 alt={member.name}
@@ -214,7 +221,7 @@ Established 2025.`}
                   {member.role}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
