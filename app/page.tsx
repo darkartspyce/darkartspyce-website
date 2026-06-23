@@ -186,6 +186,61 @@ Established 2025.`}
         </div>
       </section>
 
+<section className="px-6 py-20">
+  <h2 className="text-4xl font-bold text-center text-purple-400 mb-12">
+    LATEST RELEASES
+  </h2>
+
+  <div className="grid md:grid-cols-3 gap-8">
+
+    <div className="bg-zinc-900 p-6 rounded-2xl">
+      <h3 className="text-2xl font-bold">OLY DASINGER</h3>
+      <p className="text-gray-400 mt-2">
+        Stream on Spotify
+      </p>
+
+      <a
+        href="https://open.spotify.com/artist/01nfSPUa8tJ2dTf5279gpI"
+        target="_blank"
+        className="inline-block mt-4 bg-green-600 px-5 py-2 rounded-lg"
+      >
+        Listen Now
+      </a>
+    </div>
+
+    <div className="bg-zinc-900 p-6 rounded-2xl">
+      <h3 className="text-2xl font-bold">YUNGG DADDY FW</h3>
+      <p className="text-gray-400 mt-2">
+        Stream on Spotify
+      </p>
+
+      <a
+        href="https://open.spotify.com/artist/7aqB0ppUqR0ZntXRHjh8aL"
+        target="_blank"
+        className="inline-block mt-4 bg-green-600 px-5 py-2 rounded-lg"
+      >
+        Listen Now
+      </a>
+    </div>
+
+    <div className="bg-zinc-900 p-6 rounded-2xl">
+      <h3 className="text-2xl font-bold">VIBEZ-KING</h3>
+      <p className="text-gray-400 mt-2">
+        Stream on Spotify
+      </p>
+
+      <a
+        href="https://open.spotify.com/artist/6em1RilfYYF7v8UHZLmyEQ"
+        target="_blank"
+        className="inline-block mt-4 bg-green-600 px-5 py-2 rounded-lg"
+      >
+        Listen Now
+      </a>
+    </div>
+
+  </div>
+</section>
+
       <section className="px-6 py-20 bg-zinc-950">
         <h2 className="text-4xl font-bold text-center text-purple-400 mb-12">
           MANAGEMENT TEAM
