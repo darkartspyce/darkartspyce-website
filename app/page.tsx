@@ -64,18 +64,32 @@ export default function Home() {
     <main className="bg-black text-white min-h-screen">
 
       <nav className="flex items-center justify-between px-6 py-4 border-b border-purple-800">
-        <div className="flex items-center gap-3">
-          <Image
-            src="/logo.png"
-            alt="Dark Art Spyce"
-            width={50}
-            height={50}
-          />
-          <h1 className="text-xl font-bold text-purple-400">
-            DARK ART SPYCE
-          </h1>
-        </div>
-      </nav>
+  <div className="flex items-center gap-3">
+    <Image
+      src="/logo.png"
+      alt="Dark Art Spyce"
+      width={50}
+      height={50}
+    />
+    <h1 className="text-xl font-bold text-purple-400">
+      DARK ART SPYCE
+    </h1>
+  </div>
+
+  <div className="flex items-center gap-6">
+    <a href="#artists" className="hover:text-purple-400">
+      Artists
+    </a>
+
+    <Link href="/news" className="hover:text-purple-400">
+      News
+    </Link>
+
+    <a href="#contact" className="hover:text-purple-400">
+      Contact
+    </a>
+  </div>
+</nav>
 
       <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
 
